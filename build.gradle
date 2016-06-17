@@ -8,10 +8,10 @@ android {
     publishNonDefault true
 
     defaultConfig {
-        version "${version_code}"
-        versionName "${version_name}"
-        minSdkVersion "${minSdkVersion}"
-        targetSdkVersion "${targetSdkVersion}"
+        version rootProject.ext.version_code
+        versionName rootProject.ext.version_name
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         multiDexEnabled true
     }
     //与其main程序统一
